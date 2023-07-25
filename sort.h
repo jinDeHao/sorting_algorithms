@@ -26,4 +26,9 @@ void insertion_sort_list(listint_t **list);
 
 void selection_sort(int *array, size_t size);
 
+void quick_sort(int *array, size_t size);
+size_t quickCheck(int *array, size_t size, size_t start, size_t end);
+void myQuickSort(int *array, size_t size, size_t start, size_t end);
+void swapThenPrint(int *array, size_t size, size_t i, size_t j);
+
 #endif
