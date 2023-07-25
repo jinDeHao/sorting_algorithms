@@ -7,8 +7,7 @@
 */
 void quick_sort(int *array, size_t size)
 {
-	if (array && size > 1)
-		myQuickSort(array, size, 0, size - 1);
+	myQuickSort(array, size, 0, size - 1);
 }
 
 /**
@@ -22,7 +21,7 @@ void myQuickSort(int *array, size_t size, size_t start, size_t end)
 {
 	size_t checkerIdx;
 
-	if (start < end)
+	if (size > 1 && start < end)
 	{
 		checkerIdx = quickCheck(array, size, start, end);
 		if (checkerIdx > 1)
